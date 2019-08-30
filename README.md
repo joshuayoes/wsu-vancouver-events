@@ -1,5 +1,5 @@
 
-## Read Me
+## WSU Vancouver Events
 This project grabs events from the WSU Vancouver Engage's RSS feed and displays them to an outward facing URL. Students need to login into Engage in order to see events, which is inconventient on mobile devices because there is no mobile app for Engage to store students logins. Additionally, this project is also to highlight how many things are going on each week at WSU Vancouver and help increase the visibility of clubs and other events on campus.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
