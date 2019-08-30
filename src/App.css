@@ -1,5 +1,39 @@
+html {
+  /* background-color: #981e32; */
+}
+
 .App {
   margin: 0 auto;
   width: 80%;
-  max-width: 600px;
+  max-width: 500px;
+  background-color: white;
+  padding: 20px;
+}
+
+.eventItem {
+  margin: 2em 0;
+}
+
+.eventItem img {
+  width: 100%;
+}
+
+.eventItem a {
+  color: white;
+  text-decoration: none;
+}
+
+.eventItem button:hover, .eventItem button:active {
+  background-color: #c60c30;
+}
+
+.eventItem button {
+  display: block;
+  font-weight: 800;
+  color: white;
+  background-color: #981e32;
+  border: none;
+  margin: 0 auto;
+  padding: 1em;
+  border-radius: 20px;
 }

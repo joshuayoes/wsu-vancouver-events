@@ -1,11 +1,11 @@
 import React from 'react';
-import EventsCard from './components/EventsCard'
+import EventsFeed from './components/EventsFeed'
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <EventsCard />
+      <EventsFeed />
     </div>
   );
 }
