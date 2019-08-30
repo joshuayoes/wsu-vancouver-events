@@ -2,6 +2,12 @@ html {
   /* background-color: #981e32; */
 }
 
+.loader {
+  display: block;
+  margin: 0 auto;
+  width: 100px;
+}
+
 .App {
   margin: 0 auto;
   width: 80%;

@@ -1,11 +1,7 @@
 import React, { Component } from 'react'
 
+//has conditional UI for if the event has an image or not
 export class EventCard extends Component {  
-    static defaultProps = {
-        img: null
-    }
-    
-
     render() {
         return (
             <div key={this.props.guid} className="eventItem">
