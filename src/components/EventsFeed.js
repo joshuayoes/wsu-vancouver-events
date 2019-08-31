@@ -64,7 +64,7 @@ class EventsFeed extends Component {
         if (this.state.isLoaded === false){
             return (
                 <React.Fragment>
-                    <h1>WSUV Events</h1>
+                    <h1>WSU Vancouver Events</h1>
                     <div className="loader">
                         <Loader 
                             type="ThreeDots"
@@ -79,7 +79,7 @@ class EventsFeed extends Component {
         } else { 
             return (
                 <div className="eventsCard">
-                    <h1>WSUV Events</h1>
+                    <h1>WSU Vancouver Events</h1>
                     { eventItems }
                 </div>
             )

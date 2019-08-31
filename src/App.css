@@ -2,13 +2,44 @@ html {
   /* background-color: #981e32; */
 }
 
+h1 {
+  font-size: 30px;
+  text-align: center;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 50px;
+  background-color: #981e32;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-wsu-home, .nav-events, .nav-about {
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+
+  display: block;
+  margin: 1em;
+}
+
+nav svg {
+  margin-right: 0.2em;
+}
+
 .loader {
   display: block;
   margin: 0 auto;
   width: 100px;
 }
 
-.App {
+.feed-container {
   margin: 0 auto;
   width: 80%;
   max-width: 500px;
@@ -58,7 +89,11 @@ html {
   margin: 0.5em 0;
 }
 
-@media only screen and (min-width: 550px) {
+.buttonText {
+  margin-left: 0.5em;
+}
+
+@media only screen and (min-width: 600px) {
   .button-container {
     flex-direction: row;
     justify-content: space-between;

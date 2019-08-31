@@ -1,5 +1,8 @@
 import React, { Component } from 'react'
 import ReadMoreReact from 'read-more-react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faShareSquare, faCalendarPlus } from '@fortawesome/free-solid-svg-icons'
+
 
 //has conditional UI for if the event has an image or not
 export class EventCard extends Component {  
@@ -14,9 +17,24 @@ export class EventCard extends Component {
                     readMoreText="Read More"
                 /> 
                 <div className="button-container">
-                    <button> <a href={this.props.link} target="_blank" rel="noopener noreferrer">  View on Engage  </a> </button>
-                    <button> <a href={this.props.ics}> Add To iCal </a> </button>
-                    <button> <a href={this.props.ics}> Add To Outlook </a> </button>
+                    <button> 
+                        <a href={this.props.link} target="_blank" rel="noopener noreferrer"> 
+                            <FontAwesomeIcon icon={faShareSquare} /> 
+                            <span className="buttonText">View on Engage</span> 
+                        </a> 
+                    </button>
+                    <button> 
+                        <a href={this.props.ics}> 
+                            <FontAwesomeIcon icon={faCalendarPlus} />
+                            <span className="buttonText">Add To iCal</span> 
+                        </a> 
+                    </button>
+                    <button> 
+                        <a href={this.props.ics}>
+                            <FontAwesomeIcon icon={faCalendarPlus} />
+                            <span className="buttonText">Add To Outlook</span>
+                        </a> 
+                    </button>
                 </div>
             </div>
         )
