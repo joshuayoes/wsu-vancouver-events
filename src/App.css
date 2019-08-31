@@ -39,7 +39,28 @@ html {
   color: white;
   background-color: #981e32;
   border: none;
-  margin: 0 auto;
   padding: 1em;
   border-radius: 20px;
+}
+
+.read-more-button {
+  color: #981e32;
+  text-decoration-line: underline;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  margin: 1em 0;
+}
+
+.button-container button {
+  margin: 0.5em 0;
+}
+
+@media only screen and (min-width: 550px) {
+  .button-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }

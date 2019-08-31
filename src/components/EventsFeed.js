@@ -43,6 +43,9 @@ class EventsFeed extends Component {
             //parse begin time from RSS feed
             let beginTime = root.childNodes[0].childNodes[5].childNodes[1].childNodes[1].childNodes[0].rawText;
 
+            let googleCalendar = `${event.link}/googlepublish/`;
+            let ics = `${event.link}.ics`;
+
             //pass each event property into props
             return (<EventCard 
                 key={event.guid}
@@ -52,6 +55,8 @@ class EventsFeed extends Component {
                 beginTime={beginTime}
                 description={description}
                 link={event.link}
+                googleCalendar={googleCalendar}
+                ics={ics}
             />)
         });
         
