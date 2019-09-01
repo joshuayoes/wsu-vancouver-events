@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/wsu-vancouver-events/precache-manifest.7ee1b8d5ce562de4c6408123b7d27187.js"
+  "/wsu-vancouver-events/precache-manifest.31a0f9998831f33594bb109c3091f3fc.js"
 );
 
 self.addEventListener('message', (event) => {
