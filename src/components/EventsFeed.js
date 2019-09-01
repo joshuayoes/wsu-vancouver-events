@@ -17,15 +17,24 @@ class EventsFeed extends Component {
 
     componentDidMount(){
         //makes request to Engage RSS feed
+
+        //Uses rss-parser to turn RSS into JSON
+        //https://www.npmjs.com/package/rss-parser
         let parser = new Parser();
-        parser.parseURL('https://vancouver-wsu.campuslabs.com/engage/events.rss')
-            .then(data => {
+
+        // Note: some RSS feeds can't be loaded in the browser due to CORS security.
+        // To get around this, you can use a proxy.
+        const CORS_PROXY = "https://cors-anywhere.herokuapp.com/"
+        const RSS_FEED = 'https://vancouver-wsu.campuslabs.com/engage/events.rss'
+        parser.parseURL(CORS_PROXY + RSS_FEED)
+            .then(feed => {
                 this.setState({
-                    events: data.items,
+                    events: feed.items,
                     isLoaded: true
-                })
+                });    
             })
-    }
+            .catch(error => console.log(error));
+    };
     
     render() {
         //iterates through each event and pass RSS info through props
@@ -36,6 +45,9 @@ class EventsFeed extends Component {
                 img = {url: null}
             };
 
+            //Uses node-html-parser to grab content from incomplete RSS JSON
+            //https://www.npmjs.com/package/node-html-parser
+
             //parse description from RSS feed
             let root = HTMLParser(event.content);
             let description = root.childNodes[0].childNodes[3].text;
@@ -43,8 +55,11 @@ class EventsFeed extends Component {
             //parse begin time from RSS feed
             let beginTime = root.childNodes[0].childNodes[5].childNodes[1].childNodes[1].childNodes[0].rawText;
 
-            let googleCalendar = `${event.link}/googlepublish/`;
+            //creates URL to grab event data on click
             let ics = `${event.link}.ics`;
+
+            //TO DO: write query for Google Calendar
+            //let googleCalendar = `${event.link}/googlepublish/`;
 
             //pass each event property into props
             return (<EventCard 
@@ -55,7 +70,6 @@ class EventsFeed extends Component {
                 beginTime={beginTime}
                 description={description}
                 link={event.link}
-                googleCalendar={googleCalendar}
                 ics={ics}
             />)
         });
