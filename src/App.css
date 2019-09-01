@@ -22,6 +22,7 @@ nav {
 
   display: block;
   margin: 1em;
+  white-space: nowrap; 
 }
 
 nav svg {
@@ -65,6 +66,7 @@ nav svg {
 
 .eventItem button {
   display: block;
+  width: 100%;
   font-weight: 800;
   color: white;
   background-color: #981e32;
@@ -76,6 +78,7 @@ nav svg {
 .read-more-button {
   color: #981e32;
   text-decoration-line: underline;
+  font-weight: bold;
 }
 
 .button-container {
@@ -97,4 +100,12 @@ nav svg {
     flex-direction: row;
     justify-content: space-between;
   }
+
+  .eventItem button {
+    width: auto;
+  }
+}
+
+.about-container a {
+  color: #981e32
 }

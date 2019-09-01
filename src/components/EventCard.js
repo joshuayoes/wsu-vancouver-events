@@ -20,24 +20,25 @@ export class EventCard extends Component {
                     readMoreText="Read More"
                 /> 
                 <div className="button-container">
-                    <button> 
-                        <a href={this.props.link} target="_blank" rel="noopener noreferrer"> 
+                    <a href={this.props.link} target="_blank" rel="noopener noreferrer"> 
+                        <button>
                             <FontAwesomeIcon icon={faShareSquare} /> 
                             <span className="buttonText">View on Engage</span> 
-                        </a> 
-                    </button>
-                    <button> 
-                        <a href={this.props.ics}> 
+
+                        </button>
+                    </a> 
+                    <a href={this.props.ics}> 
+                        <button>
                             <FontAwesomeIcon icon={faCalendarPlus} />
                             <span className="buttonText">Add To iCal</span> 
-                        </a> 
-                    </button>
-                    <button> 
-                        <a href={this.props.ics}>
+                        </button>
+                    </a> 
+                    <a href={this.props.ics}>
+                        <button>
                             <FontAwesomeIcon icon={faCalendarPlus} />
                             <span className="buttonText">Add To Outlook</span>
-                        </a> 
-                    </button>
+                        </button>
+                    </a> 
                 </div>
             </div>
         )
