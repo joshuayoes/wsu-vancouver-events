@@ -1,7 +1,3 @@
-html {
-  /* background-color: #981e32; */
-}
-
 h1 {
   font-size: 30px;
   text-align: center;
@@ -53,6 +49,10 @@ nav svg {
 
 .eventItem img {
   width: 100%;
+}
+
+.eventTime svg {
+  margin-right: 0.2em;
 }
 
 .eventItem a {

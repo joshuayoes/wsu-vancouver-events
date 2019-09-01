@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import ReadMoreReact from 'read-more-react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faShareSquare, faCalendarPlus } from '@fortawesome/free-solid-svg-icons'
+import { faShareSquare, faCalendarPlus, faClock } from '@fortawesome/free-solid-svg-icons'
 
 
 //has conditional UI for if the event has an image or not
@@ -11,7 +11,10 @@ export class EventCard extends Component {
             <div key={this.props.guid} className="eventItem">
                 {this.props.img.url ? <img src={this.props.img.url} alt={this.props.title} /> : ''}
                 <h2> {this.props.title} </h2>
-                <p> {this.props.beginTime } </p>
+                <p className="eventTime"> 
+                    <FontAwesomeIcon icon={faClock} />
+                    {this.props.beginTime } 
+                </p>
                 <ReadMoreReact 
                     text={this.props.description}
                     readMoreText="Read More"
