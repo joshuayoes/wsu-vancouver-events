@@ -1,6 +1,7 @@
-
 ## WSU Vancouver Events
 This project is a redesign of the events timeline from the WSU Vancouver Engage RSS feed. I created this project as a way to highlight how many things are going on each week at WSU Vancouver and help increase the visibility of clubs and other events on campus.
+
+View production build on [GitHub Pages](https://joshuayoes.github.io/wsu-vancouver-events/)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
