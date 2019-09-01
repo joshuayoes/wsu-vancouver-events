@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0f4253f11539a1322142e38fa0f2c57f",
+    "revision": "88b3b8e12e084ff629c88dc411a4938f",
     "url": "/wsu-vancouver-events/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/wsu-vancouver-events/static/css/2.c99ed502.chunk.css"
   },
   {
-    "revision": "abed2e5f0885660f0ef9",
+    "revision": "f4b3d4a4ebddbeeae964",
     "url": "/wsu-vancouver-events/static/css/main.4f2e2a9f.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/wsu-vancouver-events/static/js/2.9819f9dd.chunk.js"
   },
   {
-    "revision": "abed2e5f0885660f0ef9",
-    "url": "/wsu-vancouver-events/static/js/main.8d042edc.chunk.js"
+    "revision": "f4b3d4a4ebddbeeae964",
+    "url": "/wsu-vancouver-events/static/js/main.9dd34d37.chunk.js"
   },
   {
     "revision": "b9878d9e8078a7264b9f",

@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/wsu-vancouver-events/static/css/main.4f2e2a9f.chunk.css",
-    "main.js": "/wsu-vancouver-events/static/js/main.8d042edc.chunk.js",
-    "main.js.map": "/wsu-vancouver-events/static/js/main.8d042edc.chunk.js.map",
+    "main.js": "/wsu-vancouver-events/static/js/main.9dd34d37.chunk.js",
+    "main.js.map": "/wsu-vancouver-events/static/js/main.9dd34d37.chunk.js.map",
     "runtime~main.js": "/wsu-vancouver-events/static/js/runtime~main.e5293f6d.js",
     "runtime~main.js.map": "/wsu-vancouver-events/static/js/runtime~main.e5293f6d.js.map",
     "static/css/2.c99ed502.chunk.css": "/wsu-vancouver-events/static/css/2.c99ed502.chunk.css",
     "static/js/2.9819f9dd.chunk.js": "/wsu-vancouver-events/static/js/2.9819f9dd.chunk.js",
     "static/js/2.9819f9dd.chunk.js.map": "/wsu-vancouver-events/static/js/2.9819f9dd.chunk.js.map",
     "index.html": "/wsu-vancouver-events/index.html",
-    "precache-manifest.976d0be4e9598c14dd89034caf15e75c.js": "/wsu-vancouver-events/precache-manifest.976d0be4e9598c14dd89034caf15e75c.js",
+    "precache-manifest.7ee1b8d5ce562de4c6408123b7d27187.js": "/wsu-vancouver-events/precache-manifest.7ee1b8d5ce562de4c6408123b7d27187.js",
     "service-worker.js": "/wsu-vancouver-events/service-worker.js",
     "static/css/2.c99ed502.chunk.css.map": "/wsu-vancouver-events/static/css/2.c99ed502.chunk.css.map",
     "static/css/main.4f2e2a9f.chunk.css.map": "/wsu-vancouver-events/static/css/main.4f2e2a9f.chunk.css.map"
